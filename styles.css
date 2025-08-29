@@ -1,0 +1,67 @@
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; /* thin */
+  font-style: normal;
+  background-color: #F5F5F5; /* light gray background */
+  color: #1E1E1E; /* dark gray text */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* centers text and buttons */
+}
+
+/* Headings */
+h1 {
+  font-weight: 500; /* slightly bolder than body */
+  margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  background-color: #1E1E1E; /* dark gray */
+  color: #FFFFFF; /* white text */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333333; /* lighter dark gray */
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Individual card */
+.card {
+  background-color: #FFFFFF; /* white card */
+  color: #1E1E1E;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
