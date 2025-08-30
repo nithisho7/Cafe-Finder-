@@ -1,10 +1,10 @@
 /* Global styles */
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 300; /* thin */
+  font-weight: 500; /* medium */
   font-style: normal;
-  background-color: #F5F5F5; /* light gray background */
-  color: #1E1E1E; /* dark gray text */
+  background-color: #3d3d3d; /* dark gray background */
+  color: #ffffff; /* white text */
   margin: 0;
   padding: 0;
   text-align: center; /* centers text and buttons */
@@ -12,7 +12,7 @@ body {
 
 /* Headings */
 h1 {
-  font-weight: 500; /* slightly bolder than body */
+  font-weight: 600; /* slightly bolder than body */
   margin-top: 20px;
 }
 
@@ -26,7 +26,7 @@ p {
 button {
   font-family: inherit;
   background-color: #1E1E1E; /* dark gray */
-  color: #FFFFFF; /* white text */
+  color: #ffffff; /* white text */
   border: none;
   padding: 10px 20px;
   margin: 10px;
@@ -47,21 +47,34 @@ button:hover {
   justify-content: center;
   margin: 20px auto;
   max-width: 900px;
+  gap: 15px; /* spacing between cards */
 }
 
 /* Individual card */
 .card {
-  background-color: #FFFFFF; /* white card */
-  color: #1E1E1E;
+  background-color: #2b2b2b; /* dark gray card */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 15px;
-  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px;
   width: 250px;
-  text-align: left;
+  text-align: center; /* centers content inside the card */
   transition: transform 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* Cafe name */
+.card h3 {
+  color: #ffffff; /* white for cafe name */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Cafe details */
+.card p {
+  color: #cccccc; /* light gray for address/details */
+  font-weight: 300;
+  margin: 5px 0;
 }
